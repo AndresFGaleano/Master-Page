@@ -11,12 +11,17 @@
             <h2>Register</h2>
             <asp:Label ID="LabelUsername" runat="server" Text="Username:" />
             <asp:TextBox ID="TextBoxUsername" runat="server" />
+            <asp:RequiredFieldValidator ID="UsernameRequired" runat="server" ControlToValidate="TextBoxUsername"
+                ErrorMessage="Username is required." ForeColor="Red" />
             <br />
             <asp:Label ID="LabelPassword" runat="server" Text="Password:" />
             <asp:TextBox ID="TextBoxPassword" runat="server" TextMode="Password" />
+            <asp:RequiredFieldValidator ID="PasswordRequired" runat="server" ControlToValidate="TextBoxPassword"
+                ErrorMessage="Password is required." ForeColor="Red" />
             <br />
             <asp:Button ID="ButtonRegister" runat="server" Text="Register" OnClick="ButtonRegister_Click" />
         </div>
     </form>
 </body>
 </html>
+
