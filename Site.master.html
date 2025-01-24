@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Web Application</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="NavigationMenu" runat="server">
+                <Items>
+                    <asp:MenuItem Text="Form 1" Value="Form1.aspx" />
+                    <asp:MenuItem Text="Form 2" Value="Form2.aspx" />
+                    <asp:MenuItem Text="Form 3" Value="Form3.aspx" />
+                </Items>
+            </asp:Menu>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
