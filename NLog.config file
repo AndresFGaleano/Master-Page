@@ -1,0 +1,9 @@
+<nlog>
+  <targets>
+    <target name="logfile" xsi:type="File" fileName="logs/app.log" 
+            layout="${longdate}|${level:uppercase=true}|${logger}|${message}" />
+  </targets>
+  <rules>
+    <logger name="*" minlevel="Debug" writeTo="logfile" />
+  </rules>
+</nlog>
